@@ -1088,7 +1088,7 @@ body {
     }
 
     .email-address {
-        font-size: 1rem;
+        font-size: 0.95rem;
     }
 
     .email-btn {
@@ -1145,6 +1145,8 @@ body {
     padding: 12px 20px;
     border-radius: 12px;
     border: 1px solid rgba(32, 178, 170, 0.2);
+    word-break: break-all;
+    overflow-wrap: break-word;
 }
 
 .email-btn {
