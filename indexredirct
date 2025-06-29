@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>Redirecting...</title>
+    <meta http-equiv="refresh" content="0; url=https://www.drvikramjeet.com">
     <script>
         window.location.href = "https://www.drvikramjeet.com";
     </script>
 </head>
 <body>
-    <p>Redirecting to <a href="https://www.drvikramjeet.com">www.drvikramjeet.com</a></p>
+    <p>Redirecting to <a href="https://www.drvikramjeet.com">www.drvikramjeet.com</a>...</p>
 </body>
 </html>
