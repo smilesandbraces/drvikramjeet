@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Redirecting...</title>
+    <script>
+        window.location.href = "https://www.drvikramjeet.com";
+    </script>
+</head>
+<body>
+    <p>Redirecting to <a href="https://www.drvikramjeet.com">www.drvikramjeet.com</a></p>
+</body>
+</html>
