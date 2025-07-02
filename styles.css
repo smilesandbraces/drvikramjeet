@@ -903,24 +903,23 @@ body {
     font-size: 0.9rem;
     color: #666;
 }
-.reviews-button {
+.testimonials-button {
   display: inline-block;
   background-color: #e0f7f6;
   color: black;
-  padding: 12px 24px;
-  border: 1px solid #b2dfdb;
-  border-radius: 25px;
-  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 30px;
   font-weight: 600;
-  cursor: pointer;
+  font-size: 16px;
   text-decoration: none;
+  border: 1px solid #c1efec;
   transition: background 0.3s ease;
-  margin-top: 2rem;
 }
 
-.reviews-button:hover {
-  background-color: #c8f2f0;
+.testimonials-button:hover {
+  background-color: #d2f0ee;
 }
+
 
 /* Contact Section - World Class Design */
 .contact {
