@@ -1582,3 +1582,34 @@ body {
     }
   }
 </style>
+/* ✅ Responsive services grid fix */
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  flex: 1 1 320px;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .services-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-card {
+    width: 90%;
+    max-width: 95%;
+  }
+}
+
