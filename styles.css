@@ -1537,3 +1537,19 @@ body {
 .many-more-button:hover {
   background-color: #d5f4f3; /* soft hover effect */
 }
+.whatsapp-link {
+  color: #25D366; /* WhatsApp green */
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 4px;
+  transition: color 0.3s ease;
+}
+
+.whatsapp-link i {
+  margin-right: 5px;
+}
+
+.whatsapp-link:hover {
+  color: #1ebe5d;
+  text-decoration: underline;
+}
