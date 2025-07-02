@@ -1538,7 +1538,7 @@ body {
   background-color: #d5f4f3; /* soft hover effect */
 }
 .whatsapp-link {
-  color: #25D366; /* WhatsApp green */
+  color: #ffffff; /* White text */
   font-weight: 500;
   text-decoration: none;
   margin-left: 4px;
@@ -1550,6 +1550,6 @@ body {
 }
 
 .whatsapp-link:hover {
-  color: #1ebe5d;
+  color: #25D366; /* WhatsApp green on hover */
   text-decoration: underline;
 }
