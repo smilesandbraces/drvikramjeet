@@ -1481,17 +1481,17 @@ body {
 
 .many-more-button {
   display: inline-block;
-  background-color: #e0f7f6;
+  background-color: #e1f8f7; /* matches your screenshot's button bg */
   color: black;
   padding: 12px 28px;
   border-radius: 30px;
   font-weight: 600;
   font-size: 16px;
   text-decoration: none;
-  border: 1px solid #b2e8e4;
+  border: 1px solid #b6e6e3; /* subtle border match */
   transition: all 0.3s ease;
 }
 
 .many-more-button:hover {
-  background-color: #c7f0ee;
+  background-color: #d5f4f3; /* soft hover effect */
 }
