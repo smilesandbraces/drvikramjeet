@@ -1553,3 +1553,32 @@ body {
   color: #25D366; /* WhatsApp green on hover */
   text-decoration: underline;
 }
+<style>
+  .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 320px;
+    box-sizing: border-box;
+  }
+
+  @media (max-width: 768px) {
+    .services-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .service-card {
+      width: 90%;
+    }
+  }
+</style>
