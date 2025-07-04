@@ -1422,7 +1422,7 @@ body {
 .video-section {
     margin-top: 120px;
     padding: 80px 0;
-    background-color: #f8fdff 0%;
+    background: linear-gradient(135deg, #f8fdff 0%, #e8f8f5 100%)
     text-align: center;
     border-top: none;
 }
