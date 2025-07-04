@@ -1388,7 +1388,7 @@ body {
         font-size: 0.9rem;
     }
 }
-/* === YouTube Shorts Video Section === */
+/* ===  YouTube Shorts Horizontal Video Grid === */
 .video-section {
     padding: 60px 0;
     background-color: #f6fefe;
@@ -1397,20 +1397,21 @@ body {
 
 .video-grid {
     display: flex;
-    justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     margin-top: 30px;
+    flex-direction: row;
 }
 
 .video-item {
-    flex: 0 1 300px;
-    max-width: 100%;
+    flex: 0 1 280px;
+    max-width: 280px;
 }
 
 .video-item iframe {
     width: 100%;
-    aspect-ratio: 9 / 16;
+    height: 500px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
 }
