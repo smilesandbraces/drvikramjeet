@@ -1424,7 +1424,7 @@ body {
     padding: 80px 0;
     background-color: #f6fefe;
     text-align: center;
-    border-top: 2px solid #e0f1f1; /* creates visible boundary from previous section */
+    border-top: 1px solid #e0f1f1; /* creates visible boundary from previous section */
 }
 
 .video-grid {
