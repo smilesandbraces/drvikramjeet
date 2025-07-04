@@ -1388,38 +1388,33 @@ body {
         font-size: 0.9rem;
     }
 }
-/*  YOUTUBE SHORTS - SCROLLABLE HORIZONTAL STRIP */
-.video-section {
-    padding: 60px 0;
-    background-color: #f6fefe;
-    text-align: center;
-    overflow: hidden;
-}
-
 .video-grid {
-    display: flex;
-    overflow-x: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    scroll-snap-type: x mandatory;
-    padding: 20px 10px;
-    -webkit-overflow-scrolling: touch;
-}
-
-.video-item {
-    flex: 0 0 auto;
-    scroll-snap-align: center;
-    width: 280px;
+    margin-top: 40px;
 }
 
 .video-item iframe {
     width: 100%;
-    height: 500px;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-.video-item iframe:hover {
-    transform: scale(1.03);
+/* Responsive fallback for smaller screens */
+@media (max-width: 1024px) {
+    .video-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
+@media (max-width: 600px) {
+    .video-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .video-item iframe {
+        height: 200px;
+    }
+}
