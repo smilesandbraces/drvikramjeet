@@ -1398,13 +1398,13 @@ body {
 .video-grid {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 20px;
+    flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .video-item {
-    flex: 0 1 300px; /* Fixed width but responsive */
+    flex: 0 1 300px;
     max-width: 100%;
 }
 
