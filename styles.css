@@ -1419,3 +1419,10 @@ body {
         height: 200px;
     }
 }
+.video-section {
+    margin-top: 120px; /* ⬅ Pushes section further down */
+    padding: 80px 0;   /* ⬅ More internal spacing */
+    background-color: #f6fefe;
+    text-align: center;
+    border-top: 2px solid #e0f1f1; /* ⬅ Light border to visually separate */
+}
