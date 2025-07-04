@@ -1388,25 +1388,27 @@ body {
         font-size: 0.9rem;
     }
 }
-/* ===  YouTube Shorts Horizontal Video Grid === */
+/*  YOUTUBE SHORTS - SCROLLABLE HORIZONTAL STRIP */
 .video-section {
     padding: 60px 0;
     background-color: #f6fefe;
     text-align: center;
+    overflow: hidden;
 }
 
 .video-grid {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    flex-direction: row;
+    overflow-x: auto;
+    gap: 20px;
+    scroll-snap-type: x mandatory;
+    padding: 20px 10px;
+    -webkit-overflow-scrolling: touch;
 }
 
 .video-item {
-    flex: 0 1 280px;
-    max-width: 280px;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    width: 280px;
 }
 
 .video-item iframe {
@@ -1414,5 +1416,10 @@ body {
     height: 500px;
     border-radius: 16px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.video-item iframe:hover {
+    transform: scale(1.03);
 }
 
