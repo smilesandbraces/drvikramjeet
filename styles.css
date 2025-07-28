@@ -1710,6 +1710,10 @@ body {
     .contact-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+        /* Move hero card upward on desktop */
+    .hero-card{
+        transform: translateY(-80px);   /* adjust -80px if you want higher/lower */
+    }
 }
 
 /* Large Desktops */
