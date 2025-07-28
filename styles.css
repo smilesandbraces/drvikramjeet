@@ -1712,7 +1712,7 @@ body {
     }
         /* Move hero card upward on desktop */
     .hero-card{
-        transform: translateY(-80px);   /* adjust -80px if you want higher/lower */
+        transform: translateY(-100px);   /* adjust -100px if you want higher/lower */
     }
 }
 
