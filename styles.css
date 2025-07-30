@@ -2011,5 +2011,31 @@ select {
       justify-content:center!important;
   }
 }
+/* === Header fix for small phones (≤430 px) === */
+@media (max-width:430px){
+
+  /* allow brand to shrink instead of pushing menu button out */
+  .nav-brand{
+      flex-shrink:1;            /* was 0 */
+      max-width:70vw;           /* don’t hog full width */
+  }
+
+  /* shrink clinic name and hide tagline */
+  .brand-text h1{
+      font-size:0.9rem;         /* ~14‑15 px */
+      line-height:1.2;
+      white-space:nowrap;       /* single line */
+      overflow:hidden;
+      text-overflow:ellipsis;   /* adds … if still too long */
+  }
+  .brand-text p{
+      display:none;             /* hide “Dr. Vikram Jeet Singh” on tiny screens */
+  }
+
+  /* just a little space so text doesn't touch icon */
+  .nav-brand{
+      gap:0.4rem;
+  }
+}
 
 
