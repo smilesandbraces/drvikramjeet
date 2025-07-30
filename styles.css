@@ -312,8 +312,7 @@ body {
         transform: translateY(0);
     }
 }
-css body.menu-open{overflow:hidden;position:fixed;width:100%;}
-
+body.menu-open{overflow:hidden;position:fixed;width:100%;}
 /* ===== PREMIUM BUTTON SYSTEM ===== */
 .btn {
     display: inline-flex;
@@ -1796,8 +1795,8 @@ css body.menu-open{overflow:hidden;position:fixed;width:100%;}
         width: 100%;
         justify-content: center;
     }
-    css .hero h1{font-size:2rem;line-height:1.25;} .hero-description{font-size:1rem;} .floating-shapes,.hero-background{display:none;}
-    css .hero-buttons .btn-large{margin-bottom:0.5rem;width:100%;}
+    .hero h1{font-size:2rem;line-height:1.25;} .hero-description{font-size:1rem;} .floating-shapes,.hero-background{display:none;}
+    .hero-buttons .btn-large{margin-bottom:0.5rem;width:100%;}
 }
 
 /* Ultra-wide Screens */
@@ -1984,5 +1983,33 @@ select {
 }
 
 /* ===== END OF PREMIUM CSS ===== */
+/* === FINAL MOBILE OVERRIDES (≤430 px) === */
+@media (max-width:430px){
+
+  .hero h1{
+      font-size:2rem!important;      /* 32 px */
+      line-height:1.25!important;
+  }
+
+  .hero-description{
+      font-size:1rem!important;      /* 16 px */
+      line-height:1.6!important;
+      max-width:90vw!important;
+  }
+
+  .floating-shapes,
+  .hero-background{
+      display:none!important;        /* lighter & cleaner */
+  }
+
+  .hero-buttons{
+      flex-direction:column!important;
+      gap:0.5rem!important;
+  }
+  .hero-buttons .btn-large{
+      width:100%!important;
+      justify-content:center!important;
+  }
+}
 
 
