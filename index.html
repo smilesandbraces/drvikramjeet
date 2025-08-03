@@ -1186,6 +1186,65 @@
     </footer>
 
     <script src="script.js"></script>
+    <!-- ===== CALLBACK MODAL & TRIGGER ===== -->
+<!-- Floating trigger button -->
+<button id="openCallback" class="callback-trigger btn btn-primary btn-large" aria-haspopup="dialog">
+    <i class="fas fa-phone-volume"></i>  Get a Call-Back
+</button>
+
+<!-- Modal wrapper (hidden by default) -->
+<div id="callbackOverlay" class="callback-overlay" role="dialog" aria-modal="true" aria-labelledby="callbackTitle">
+  <div class="callback-card">
+      <button class="callback-close" aria-label="Close modal">&times;</button>
+
+      <div class="callback-header">
+          <div class="callback-logo">
+              <i class="fas fa-tooth"></i>
+          </div>
+          <h2 id="callbackTitle">Didn’t find what you were looking for?</h2>
+          <p>Get a call-back from our expert dentist</p>
+      </div>
+
+      <form id="callbackForm" class="callback-form">
+          <label class="input-wrap">
+              <i class="fas fa-user"></i>
+              <input type="text" name="name" placeholder="Name*" required>
+          </label>
+
+          <label class="input-wrap">
+              <i class="fas fa-phone"></i>
+              <input type="tel" name="phone" placeholder="Phone*" pattern="[0-9]{10}" required>
+          </label>
+
+          <label class="input-wrap select">
+              <select name="city" required>
+                  <option value="" disabled selected>Select City*</option>
+                  <option>Lucknow</option>
+                  <option>Kanpur</option>
+                  <option>Delhi NCR</option>
+                  <option>Other</option>
+              </select>
+          </label>
+
+          <!-- Simple captcha -->
+          <div class="captcha-wrap">
+              <input type="text" id="captchaInput" placeholder="Enter code*" required>
+              <span id="captchaCode">3487</span>
+              <button type="button" id="refreshCaptcha" aria-label="Refresh captcha">
+                  <i class="fas fa-sync-alt"></i>
+              </button>
+          </div>
+
+          <label class="consent">
+              <input type="checkbox" required>
+              I hereby consent to receive calls / messages from Smiles & Braces Dental Clinic.
+          </label>
+
+          <button type="submit" class="btn btn-primary btn-large btn-block">Submit</button>
+      </form>
+  </div>
+</div>
+<!-- ===== END CALLBACK MODAL ===== -->
 </body>
 </html>
 
