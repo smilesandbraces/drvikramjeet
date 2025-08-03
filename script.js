@@ -969,49 +969,5 @@ if (typeof module !== 'undefined' && module.exports) {
     };
 }
 
-/* ===== CALLBACK MODAL LOGIC ===== */
-(function(){
-    const overlay   = document.getElementById('callbackOverlay');
-    const openBtn   = document.getElementById('openCallback');
-    const closeBtn  = overlay.querySelector('.callback-close');
-    const captchaEl = document.getElementById('captchaCode');
-    const refresh   = document.getElementById('refreshCaptcha');
-    const form      = document.getElementById('callbackForm');
-
-    // Generate random 4-digit captcha
-    const genCaptcha = () => {
-        captchaEl.textContent = Math.floor(1000 + Math.random()*9000);
-    };
-
-    // Open / close helpers
-    const openModal = () => { overlay.style.display = 'flex'; document.body.style.overflow = 'hidden'; };
-    const closeModal= () => { overlay.style.display = 'none';  document.body.style.overflow = ''; };
-    
-    openBtn.addEventListener('click',   openModal);
-    closeBtn.addEventListener('click',  closeModal);
-    overlay.addEventListener('click',   e => { if(e.target === overlay) closeModal(); });
-    document.addEventListener('keyup',  e => { if(e.key==='Escape') closeModal(); });
-    refresh.addEventListener('click',   () => { genCaptcha(); });
-
-    // Basic client-side validation + (dummy) AJAX
-    form.addEventListener('submit', e=>{
-        e.preventDefault();
-        const codeOK = document.getElementById('captchaInput').value === captchaEl.textContent;
-        if(!codeOK){ alert('Captcha incorrect'); return; }
-
-        /* ---- your back-end here ----
-           fetch('https://example.com/api/callback', {
-                method:'POST',
-                headers:{ 'Content-Type':'application/json' },
-                body: JSON.stringify(Object.fromEntries(new FormData(form)))
-           }).then(()=>{ ... });
-        */
-        alert('Thanks! We will call you shortly.'); 
-        form.reset(); genCaptcha(); closeModal();
-    });
-
-    // First load
-    genCaptcha();
-})();
 
 
