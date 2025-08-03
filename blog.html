@@ -137,14 +137,14 @@
     }
     .brand-text h3 {
       margin:0;
-      font-size:1.05rem;
+      font-size:1rem;
       font-weight:700;
       line-height:1.1;
     }
-    .brand-text p {
+    .brand-text .subtitle {
       margin:0;
-      font-size:0.65rem;
-      color:#555;
+      font-size:.75rem;
+      color: var(--muted);
       margin-top:2px;
     }
     .nav-links {
@@ -199,7 +199,7 @@
       background: rgba(31,111,165,0.07);
     }
 
-    /* Mobile */
+    /* Mobile toggle */
     .mobile-menu-toggle {
       display:none;
       flex-direction:column;
@@ -215,7 +215,7 @@
       transition: all .25s ease;
     }
 
-    /* HERO/SECTION */
+    /* SECTION */
     .section-header {
       text-align:center;
       max-width:760px;
@@ -247,7 +247,7 @@
       color: #556d95;
     }
 
-    /* GRID CARDS */
+    /* CARDS */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
@@ -320,7 +320,6 @@
       transition:.2s ease;
     }
     .socials a:hover {opacity:1;}
-
     .subtext {
       margin-top:4px;
       font-size:0.65rem;
@@ -361,7 +360,6 @@
       <div class="nav-inner">
         <div class="nav-brand">
           <div class="logo-icon" aria-label="Clinic logo">
-            <!-- refined tooth SVG -->
             <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none">
               <path fill="#fff" d="M32 6c-5 0-9 4-9 9 0 2.8.5 6.2 1.5 9.2 1 3 2.5 5 4 7 1.5-2 3-4 4-7 1-3 1.5-6.4 1.5-9.2 0-5-4-9-9-9zm-9 44c0 5 4 9 9 9s9-4 9-9v-8H23v8zm25-12c0 6-5 11-11 11H27c-6 0-11-5-11-11v-6c0-8 7-15 15-15s15 7 15 15v6z"/>
               <path fill="#fff" opacity=".6" d="M23 15c0-3.9 3.1-7 7-7s7 3.1 7 7c0 1.8-.4 3.9-1.2 6-.9 2.3-2.2 3.9-3.6 5.8-.4.6-1.1.6-1.5 0-1.4-1.9-2.7-3.5-3.6-5.8-.8-2.1-1.2-4.2-1.2-6z"/>
@@ -369,7 +367,7 @@
           </div>
           <div class="brand-text">
             <h3>Smiles &amp; Braces Dental Clinic</h3>
-            <p>Dr. Vikram Jeet Singh</p>
+            <div class="subtitle">Dental Health Blog</div>
           </div>
         </div>
         <div class="nav-links" id="navLinks">
@@ -429,7 +427,7 @@
       <div class="socials" aria-label="Social links">
         <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-        <a href="mailto:smileandbracesmunshipuliya@gmail.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
+        <a href="mailto:smilesandbracesmunshipuliya@gmail.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
       </div>
       <div class="subtext">
         Trusted orthodontic care in Lucknow · Shop No.6, Javed Market, Indira Nagar, Lucknow, Uttar Pradesh 226016
