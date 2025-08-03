@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Dental Blog: Oral Hygiene Tips & Preventive Care | Smiles & Braces Dental Clinic</title>
-  <meta name="description" content="Read the inaugural blog post by Dr. Vikram Jeet Singh on daily oral hygiene—practical tips to prevent cavities, gum disease & maintain a healthy smile in Lucknow." />
+  <meta name="description" content="Read the first blog post by Dr. Vikram Jeet Singh on daily oral hygiene—easy tips to prevent cavities, gum disease & keep your smile healthy in Lucknow." />
   <link rel="canonical" href="https://www.drvikramjeet.com/blog.html" />
   <meta name="theme-color" content="#1f6fa5" />
   <meta name="robots" content="index, follow" />
@@ -12,16 +12,16 @@
   <!-- Open Graph -->
   <meta property="og:site_name" content="Smiles & Braces Dental Clinic" />
   <meta property="og:title" content="Dental Blog: Oral Hygiene Tips & Preventive Care" />
-  <meta property="og:description" content="Inaugural blog post by Dr. Vikram Jeet Singh on daily oral hygiene. Learn simple routines to keep your smile healthy." />
+  <meta property="og:description" content="First blog post by Dr. Vikram Jeet Singh on daily oral hygiene. Learn simple routines to keep your smile healthy." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.drvikramjeet.com/blog.html" />
   <meta property="og:image" content="https://www.drvikramjeet.com/assets/images/the-importance-of-daily-oral-hygiene.jpg" />
-  <meta property="og:image:alt" content="Healthy smile illustration for dental blog" />
+  <meta property="og:image:alt" content="Healthy smile illustration" />
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Dental Blog: Oral Hygiene Tips & Preventive Care" />
-  <meta name="twitter:description" content="Inaugural blog post by Dr. Vikram Jeet Singh on daily oral hygiene. Learn simple routines to keep your smile healthy." />
+  <meta name="twitter:description" content="First blog post by Dr. Vikram Jeet Singh on daily oral hygiene. Learn simple routines to keep your smile healthy." />
   <meta name="twitter:image" content="https://www.drvikramjeet.com/assets/images/the-importance-of-daily-oral-hygiene.jpg" />
 
   <!-- Structured Data -->
@@ -30,22 +30,11 @@
     "@context":"https://schema.org",
     "@graph":[
       {
-        "@type":"Organization",
+        "@type":"Dentist",
         "name":"Smiles & Braces Dental Clinic",
         "url":"https://www.drvikramjeet.com",
         "logo":"https://www.drvikramjeet.com/assets/images/logo.png",
-        "sameAs": [
-          "https://www.instagram.com/drvikramjeetdental",
-          "https://wa.me/917570000801"
-        ],
-        "contactPoint":[
-          {
-            "@type":"ContactPoint",
-            "telephone":"+9175700000801",
-            "contactType":"Customer Service",
-            "areaServed":"IN"
-          }
-        ],
+        "telephone":"+9175700000801",
         "address":{
           "@type":"PostalAddress",
           "streetAddress":"Shop No.6, Javed Market, Indira Nagar",
@@ -58,40 +47,31 @@
       {
         "@type":"BreadcrumbList",
         "itemListElement":[
-          {
-            "@type":"ListItem",
-            "position":1,
-            "name":"Home",
-            "item":"https://www.drvikramjeet.com/"
-          },
-          {
-            "@type":"ListItem",
-            "position":2,
-            "name":"Blog",
-            "item":"https://www.drvikramjeet.com/blog.html"
-          }
+          {"@type":"ListItem","position":1,"name":"Home","item":"https://www.drvikramjeet.com/"},
+          {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.drvikramjeet.com/blog.html"}
         ]
       }
     ]
   }
   </script>
 
-  <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-pO1YFfG+Y6kVqS+P1w8uZq1EJY+TZH6aE8FZ5xI7+tkFh9fQ3EeEe5OVn0JfVtT0Osxg6EwWmG0fKQX0bqW5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fonts + Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-pO1YFfG+Y6kVqS+P1w8uZq1EJY+TZH6aE8FZ5xI7+tkFh9fQ3EeEe5OVn0JfVtT0Osxg6EwWmG0fKQX0bqW5g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
   <style>
     :root {
-      --radius: 12px;
-      --shadow: 0 20px 50px -10px rgba(31,111,165,0.15);
+      --radius: 14px;
+      --shadow: 0 28px 70px -10px rgba(31,111,165,0.12);
       --gradient: linear-gradient(135deg,#20b2aa,#1f6fa5);
-      --transition: .28s cubic-bezier(.4,.2,.2,1);
+      --transition: .3s cubic-bezier(.4,.2,.2,1);
       --ff-primary: 'Inter', system-ui,-apple-system,sans-serif;
       --ff-secondary: 'Poppins', system-ui,-apple-system,sans-serif;
-      --bg: #f7f9fc;
-      --card-bg: #ffffff;
+      --bg:#f3f8fc;
+      --card:#ffffff;
+      --muted:#6b7a99;
     }
     *{box-sizing:border-box;}
     body {
@@ -103,35 +83,37 @@
       -webkit-font-smoothing:antialiased;
     }
     a {text-decoration:none;color: inherit;}
-    img {display:block;max-width:100%;height:auto;border-radius:8px;}
+    img {display:block;max-width:100%;height:auto;border-radius:12px;}
     .container {
-      width: min(1100px, 90%);
+      width: min(1120px, 94%);
       margin: 0 auto;
       padding:0;
     }
+
+    /* HEADER */
     .header {
       position: sticky;
       top:0;
       z-index: 100;
       background:#fff;
-      border-bottom:1px solid rgba(0,0,0,0.04);
-      backdrop-filter: saturate(180%) blur(10px);
+      border-bottom:1px solid rgba(0,0,0,0.05);
+      padding: 0.5rem 0;
+      box-shadow: 0 10px 30px -10px rgba(31,111,165,0.05);
     }
     .nav-inner {
       display:flex;
       align-items:center;
       justify-content: space-between;
-      padding: 0.85rem 0;
       gap:1rem;
     }
     .nav-brand {
       display:flex;
       align-items:center;
-      gap:0.6rem;
+      gap:0.75rem;
     }
     .logo-icon {
-      width:46px;
-      height:46px;
+      width:50px;
+      height:50px;
       border-radius:50%;
       background: var(--gradient);
       display:flex;
@@ -139,19 +121,23 @@
       justify-content:center;
       position: relative;
       flex-shrink:0;
-      box-shadow: 0 16px 45px -8px rgba(32,178,170,0.45);
+      box-shadow: 0 20px 60px -10px rgba(32,178,170,0.35);
+      transition: var(--transition);
+    }
+    .logo-icon:hover {
+      transform: scale(1.05);
     }
     .logo-icon::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      border-radius: 50%;
-      box-shadow: 0 0 16px rgba(255,255,255,0.2);
-      pointer-events: none;
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius:50%;
+      box-shadow:0 0 22px rgba(255,255,255,0.18);
+      pointer-events:none;
     }
     .brand-text h3 {
       margin:0;
-      font-size:1rem;
+      font-size:1.05rem;
       font-weight:700;
       line-height:1.1;
     }
@@ -159,25 +145,25 @@
       margin:0;
       font-size:0.65rem;
       color:#555;
+      margin-top:2px;
     }
     .nav-links {
       display:flex;
       align-items:center;
       gap:1rem;
-      flex-wrap: wrap;
     }
     .nav-link {
       position: relative;
       font-size:0.9rem;
-      padding:8px 10px;
-      border-radius:6px;
+      padding:10px 14px;
+      border-radius:8px;
       font-weight:500;
-      color:#334165;
+      color:#2f3f60;
       transition: var(--transition);
     }
     .nav-link:hover,
     .nav-link.active {
-      background: rgba(31,111,165,0.08);
+      background: rgba(32,178,170,0.08);
       color: #1f4f8a;
     }
     .btn {
@@ -186,8 +172,8 @@
       gap:6px;
       font-weight:600;
       font-size:0.85rem;
-      padding:9px 16px;
-      border-radius:8px;
+      padding:11px 18px;
+      border-radius:10px;
       cursor:pointer;
       border:none;
       transition: var(--transition);
@@ -196,25 +182,28 @@
     .btn-primary {
       background: var(--gradient);
       color:#fff;
-      box-shadow: 0 14px 40px -10px rgba(32,178,170,0.35);
+      box-shadow: 0 16px 50px -10px rgba(32,178,170,0.4);
     }
     .btn-primary:hover {
-      filter:brightness(1.05);
+      filter:brightness(1.07);
       transform: translateY(-1px);
     }
     .btn-outline {
       background: transparent;
       border:2px solid #1f6fa5;
       color: #1f6fa5;
-      border-radius:8px;
+      border-radius:10px;
+      padding:10px 18px;
     }
     .btn-outline:hover {
-      background: rgba(31,111,165,0.08);
+      background: rgba(31,111,165,0.07);
     }
+
+    /* Mobile */
     .mobile-menu-toggle {
       display:none;
       flex-direction:column;
-      gap:4px;
+      gap:5px;
       cursor:pointer;
       width:30px;
     }
@@ -223,47 +212,52 @@
       height:3px;
       background:#334165;
       border-radius:3px;
-      transition: all .3s ease;
+      transition: all .25s ease;
     }
+
+    /* HERO/SECTION */
     .section-header {
       text-align:center;
-      max-width:720px;
-      margin:0 auto 2rem;
+      max-width:760px;
+      margin:0 auto 1.8rem;
+      padding-top:20px;
     }
     .section-tag {
       display:inline-block;
-      background: rgba(32,178,170,0.12);
+      background: rgba(32,178,170,0.15);
       color: #207f92;
       font-size:12px;
       font-weight:600;
-      padding:6px 14px;
+      padding:7px 16px;
       border-radius:999px;
       letter-spacing:1px;
       text-transform:uppercase;
-      margin-bottom:6px;
+      margin-bottom:8px;
     }
     .section-header h2 {
-      margin:8px 0 6px;
+      margin:4px 0 6px;
       font-family: var(--ff-secondary);
-      font-size:2.2rem;
+      font-size:2.4rem;
       font-weight:700;
       line-height:1.1;
     }
     .section-header p {
       margin:0;
       font-size:1rem;
-      color:#556d95;
+      color: #556d95;
     }
+
+    /* GRID CARDS */
     .features-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-      gap:1.75rem;
+      grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+      gap:2rem;
       margin-top:1rem;
     }
     .feature-card {
-      background: var(--card-bg);
-      border-radius:16px;
-      padding:1.6rem 1.6rem 2rem;
+      background: var(--card);
+      border-radius:20px;
+      padding:1.8rem 1.8rem 2.4rem;
       position: relative;
       overflow:hidden;
       box-shadow: var(--shadow);
@@ -273,85 +267,85 @@
       transition: var(--transition);
     }
     .feature-card:hover {
-      transform: translateY(-3px);
+      transform: translateY(-4px);
+      box-shadow: 0 35px 80px -15px rgba(31,111,165,0.2);
     }
     .feature-meta {
       display:flex;
       align-items:center;
       gap:10px;
       font-size:0.75rem;
-      color:#6b7a99;
+      color: var(--muted);
       font-weight:500;
-    }
-    .feature-meta .date {
-      display:flex;
-      align-items:center;
-      gap:4px;
     }
     .feature-card h3 {
       margin:0;
-      font-size:1.25rem;
+      font-size:1.35rem;
       line-height:1.2;
-      font-weight:600;
+      font-weight:700;
       font-family: var(--ff-secondary);
+      color:#1d2a4a;
     }
     .feature-card p {
       margin:0;
       flex-grow:1;
-      font-size:0.95rem;
+      font-size:1rem;
       color:#37456a;
     }
     .read-more-wrapper {
-      margin-top: auto;
-      display:flex;
-      justify-content: flex-start;
-      gap:10px;
-      align-items:center;
+      margin-top:auto;
     }
+
+    /* FOOTER */
     .footer {
-      margin-top:4rem;
+      margin-top:4.5rem;
       background:#fff;
       padding:2.2rem 0;
       text-align:center;
-      font-size:0.85rem;
+      font-size:0.8rem;
       color:#5f6f9a;
       border-top:1px solid rgba(0,0,0,0.04);
     }
-    .footer small {
-      display:block;
-      margin-bottom:6px;
-    }
+    .footer small {display:block;margin-bottom:6px;}
     .socials {
-      margin:12px 0 4px;
+      margin:10px 0 4px;
       display:flex;
       justify-content:center;
-      gap:14px;
+      gap:16px;
     }
     .socials a {
-      font-size:1rem;
+      font-size:1.1rem;
       color:#334165;
       opacity:.75;
-      transition: .2s ease;
+      transition:.2s ease;
     }
     .socials a:hover {opacity:1;}
-    @media (max-width: 1024px){
+
+    .subtext {
+      margin-top:4px;
+      font-size:0.65rem;
+      color:#8a9bbf;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 1080px){
       .nav-links {display:none;}
       .mobile-menu-toggle {display:flex;}
-      .header .container {padding:0 8px;}
     }
-    @media (max-width: 800px){
-      .section-header h2 {font-size:1.8rem;}
+    @media (max-width: 840px){
+      .section-header h2 {font-size:2rem;}
+      .feature-card {padding:1.4rem 1.4rem 2rem;}
     }
     .nav-open .nav-links {
-      position: absolute;
+      position:absolute;
       top:100%;
       left:0;
       right:0;
       background:#fff;
-      flex-direction: column;
+      flex-direction:column;
       gap:0;
-      padding:12px 0;
-      border-bottom:1px solid rgba(0,0,0,0.07);
+      padding:14px 0;
+      border-bottom:1px solid rgba(0,0,0,0.08);
       display:flex;
       z-index:50;
     }
@@ -367,9 +361,10 @@
       <div class="nav-inner">
         <div class="nav-brand">
           <div class="logo-icon" aria-label="Clinic logo">
-            <!-- matched SVG tooth like main page -->
-            <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-              <path d="M32 4c-5 0-9 4-9 9 0 3 .5 6.5 1.5 9.5 1 3 2.5 5 4 7 1.5-2 3-4 4-7 1-3 1.5-6.5 1.5-9.5 0-5-4-9-9-9zm-9 44c0 5 4 9 9 9s9-4 9-9v-8H23v8zm25-12c0 6-5 11-11 11H27c-6 0-11-5-11-11v-6c0-8 7-15 15-15s15 7 15 15v6z"/>
+            <!-- refined tooth SVG -->
+            <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <path fill="#fff" d="M32 6c-5 0-9 4-9 9 0 2.8.5 6.2 1.5 9.2 1 3 2.5 5 4 7 1.5-2 3-4 4-7 1-3 1.5-6.4 1.5-9.2 0-5-4-9-9-9zm-9 44c0 5 4 9 9 9s9-4 9-9v-8H23v8zm25-12c0 6-5 11-11 11H27c-6 0-11-5-11-11v-6c0-8 7-15 15-15s15 7 15 15v6z"/>
+              <path fill="#fff" opacity=".6" d="M23 15c0-3.9 3.1-7 7-7s7 3.1 7 7c0 1.8-.4 3.9-1.2 6-.9 2.3-2.2 3.9-3.6 5.8-.4.6-1.1.6-1.5 0-1.4-1.9-2.7-3.5-3.6-5.8-.8-2.1-1.2-4.2-1.2-6z"/>
             </svg>
           </div>
           <div class="brand-text">
@@ -394,7 +389,7 @@
     </div>
   </header>
 
-  <main style="padding: 80px 0 40px;">
+  <main style="padding: 90px 0 50px;">
     <section class="features">
       <div class="container">
         <div class="section-header">
@@ -402,11 +397,11 @@
           <h2>Latest Articles</h2>
           <p>Fresh insights for a healthier smile – updated daily.</p>
         </div>
+
         <div class="features-grid" aria-label="Article list">
-          <!-- Featured post card with schema -->
           <article class="feature-card" aria-label="The Importance of Daily Oral Hygiene" itemscope itemtype="https://schema.org/BlogPosting">
             <div class="feature-meta">
-              <div class="date" aria-label="Published date">
+              <div class="date">
                 <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
                 <time datetime="2025-08-03" itemprop="datePublished">03 Aug 2025</time>
               </div>
@@ -416,7 +411,7 @@
             </h3>
             <p itemprop="description">Brushing and flossing are your first defence against cavities and gum disease. Learn the science behind a sparkling smile and build a routine that lasts.</p>
             <div class="read-more-wrapper">
-              <a href="posts/oral-hygiene-importance.html" class="btn btn-outline" aria-label="Read more about oral hygiene" itemprop="mainEntityOfPage">Read More</a>
+              <a href="posts/oral-hygiene-importance.html" class="btn btn-outline" aria-label="Read more" itemprop="mainEntityOfPage">Read More</a>
             </div>
             <meta itemprop="author" content="Dr. Vikram Jeet Singh" />
             <meta itemprop="publisher" content="Smiles & Braces Dental Clinic" />
@@ -431,13 +426,13 @@
       <div>
         <small>© <span id="year"></span> Smiles &amp; Braces Dental Clinic · Written by Dr. Vikram Jeet Singh</small>
       </div>
-      <div class="socials" aria-label="Clinic social links">
+      <div class="socials" aria-label="Social links">
         <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
-        <a href="mailto:info@bestindiandentist.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
+        <a href="mailto:smileandbracesmunshipuliya@gmail.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
       </div>
-      <div style="margin-top:6px;font-size:0.7rem;color:#8a9bbf;">
-        <p>Trusted orthodontic care in Lucknow · Shop No.6, Javed Market, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
+      <div class="subtext">
+        Trusted orthodontic care in Lucknow · Shop No.6, Javed Market, Indira Nagar, Lucknow, Uttar Pradesh 226016
       </div>
     </div>
   </footer>
