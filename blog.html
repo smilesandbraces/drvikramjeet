@@ -3,24 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dental Blog | Smiles & Braces Dental Clinic</title>
-  <meta name="description" content="Daily dentistry tips & news from Dr. Vikram Jeet Singh, Lucknow. Learn oral hygiene, preventive care, and stay updated with expert articles." />
+  <title>Dental Blog: Oral Hygiene Tips & Preventive Care | Smiles & Braces Dental Clinic</title>
+  <meta name="description" content="Read the inaugural blog post by Dr. Vikram Jeet Singh on daily oral hygiene—practical tips to prevent cavities, gum disease & maintain a healthy smile in Lucknow." />
+  <link rel="canonical" href="https://www.drvikramjeet.com/blog.html" />
   <meta name="theme-color" content="#1f6fa5" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:site_name" content="Smiles & Braces Dental Clinic" />
+  <meta property="og:title" content="Dental Blog: Oral Hygiene Tips & Preventive Care" />
+  <meta property="og:description" content="Inaugural blog post by Dr. Vikram Jeet Singh on daily oral hygiene. Learn simple routines to keep your smile healthy." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.drvikramjeet.com/blog.html" />
+  <meta property="og:image" content="https://www.drvikramjeet.com/assets/images/the-importance-of-daily-oral-hygiene.jpg" />
+  <meta property="og:image:alt" content="Healthy smile illustration for dental blog" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dental Blog: Oral Hygiene Tips & Preventive Care" />
+  <meta name="twitter:description" content="Inaugural blog post by Dr. Vikram Jeet Singh on daily oral hygiene. Learn simple routines to keep your smile healthy." />
+  <meta name="twitter:image" content="https://www.drvikramjeet.com/assets/images/the-importance-of-daily-oral-hygiene.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@graph":[
+      {
+        "@type":"Organization",
+        "name":"Smiles & Braces Dental Clinic",
+        "url":"https://www.drvikramjeet.com",
+        "logo":"https://www.drvikramjeet.com/assets/images/logo.png",
+        "sameAs": [
+          "https://www.instagram.com/drvikramjeetdental",
+          "https://wa.me/917570000801"
+        ],
+        "contactPoint":[
+          {
+            "@type":"ContactPoint",
+            "telephone":"+9175700000801",
+            "contactType":"Customer Service",
+            "areaServed":"IN"
+          }
+        ],
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"Shop No.6, Javed Market, Indira Nagar",
+          "addressLocality":"Lucknow",
+          "addressRegion":"Uttar Pradesh",
+          "postalCode":"226016",
+          "addressCountry":"IN"
+        }
+      },
+      {
+        "@type":"BreadcrumbList",
+        "itemListElement":[
+          {
+            "@type":"ListItem",
+            "position":1,
+            "name":"Home",
+            "item":"https://www.drvikramjeet.com/"
+          },
+          {
+            "@type":"ListItem",
+            "position":2,
+            "name":"Blog",
+            "item":"https://www.drvikramjeet.com/blog.html"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts & Icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-pO1YFfG+Y6kVqS+P1w8uZq1EJY+TZH6aE8FZ5xI7+tkFh9fQ3EeEe5OVn0JfVtT0Osxg6EwWmG0fKQX0bqW5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   <style>
     :root {
       --radius: 12px;
       --shadow: 0 20px 50px -10px rgba(31,111,165,0.15);
-      --gradient: linear-gradient(135deg,#1f6fa5,#20b2aa);
+      --gradient: linear-gradient(135deg,#20b2aa,#1f6fa5);
       --transition: .28s cubic-bezier(.4,.2,.2,1);
       --ff-primary: 'Inter', system-ui,-apple-system,sans-serif;
       --ff-secondary: 'Poppins', system-ui,-apple-system,sans-serif;
       --bg: #f7f9fc;
       --card-bg: #ffffff;
-      --radius-sm: 8px;
     }
     *{box-sizing:border-box;}
     body {
@@ -38,8 +109,6 @@
       margin: 0 auto;
       padding:0;
     }
-
-    /* HEADER */
     .header {
       position: sticky;
       top:0;
@@ -55,27 +124,30 @@
       padding: 0.85rem 0;
       gap:1rem;
     }
-      <div class="nav-brand">
-  <div class="logo-icon" aria-label="Clinic logo">
-    <div class="tooth-wrapper">
-      <i class="fas fa-tooth" aria-hidden="true"></i>
-    </div>
-  </div>
-  <div class="brand-text">
-    <h3>Smiles &amp; Braces Dental Clinic</h3>
-    <p>Dr. Vikram Jeet Singh</p>
-  </div>
-</div>
+    .nav-brand {
+      display:flex;
+      align-items:center;
+      gap:0.6rem;
     }
     .logo-icon {
-      background: var(--gradient);
-      padding:12px;
+      width:46px;
+      height:46px;
       border-radius:50%;
+      background: var(--gradient);
       display:flex;
       align-items:center;
       justify-content:center;
-      color:#fff;
-      font-size:1.1rem;
+      position: relative;
+      flex-shrink:0;
+      box-shadow: 0 16px 45px -8px rgba(32,178,170,0.45);
+    }
+    .logo-icon::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      box-shadow: 0 0 16px rgba(255,255,255,0.2);
+      pointer-events: none;
     }
     .brand-text h3 {
       margin:0;
@@ -139,8 +211,6 @@
     .btn-outline:hover {
       background: rgba(31,111,165,0.08);
     }
-
-    /* mobile toggle */
     .mobile-menu-toggle {
       display:none;
       flex-direction:column;
@@ -155,8 +225,6 @@
       border-radius:3px;
       transition: all .3s ease;
     }
-
-    /* HERO / SECTION */
     .section-header {
       text-align:center;
       max-width:720px;
@@ -186,8 +254,6 @@
       font-size:1rem;
       color:#556d95;
     }
-
-    /* GRID */
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
@@ -242,8 +308,6 @@
       gap:10px;
       align-items:center;
     }
-
-    /* FOOTER */
     .footer {
       margin-top:4rem;
       background:#fff;
@@ -270,8 +334,6 @@
       transition: .2s ease;
     }
     .socials a:hover {opacity:1;}
-
-    /* Responsive */
     @media (max-width: 1024px){
       .nav-links {display:none;}
       .mobile-menu-toggle {display:flex;}
@@ -280,7 +342,6 @@
     @media (max-width: 800px){
       .section-header h2 {font-size:1.8rem;}
     }
-    /* Mobile nav open */
     .nav-open .nav-links {
       position: absolute;
       top:100%;
@@ -305,7 +366,12 @@
     <div class="container">
       <div class="nav-inner">
         <div class="nav-brand">
-          <div class="logo-icon" aria-label="Tooth logo"><i class="fas fa-tooth"></i></div>
+          <div class="logo-icon" aria-label="Clinic logo">
+            <!-- matched SVG tooth like main page -->
+            <svg width="24" height="24" viewBox="0 0 64 64" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff">
+              <path d="M32 4c-5 0-9 4-9 9 0 3 .5 6.5 1.5 9.5 1 3 2.5 5 4 7 1.5-2 3-4 4-7 1-3 1.5-6.5 1.5-9.5 0-5-4-9-9-9zm-9 44c0 5 4 9 9 9s9-4 9-9v-8H23v8zm25-12c0 6-5 11-11 11H27c-6 0-11-5-11-11v-6c0-8 7-15 15-15s15 7 15 15v6z"/>
+            </svg>
+          </div>
           <div class="brand-text">
             <h3>Smiles &amp; Braces Dental Clinic</h3>
             <p>Dr. Vikram Jeet Singh</p>
@@ -318,7 +384,7 @@
           <a href="index.html#contact" class="nav-link">Contact</a>
           <a href="blog.html" class="nav-link active">Blog</a>
           <a href="https://wa.me/917570000801?text=Hi%20Dr.%20Vikram" target="_blank" class="btn btn-primary" aria-label="Book on WhatsApp">
-            <i class="fab fa-whatsapp"></i> Book Now
+            <i class="fab fa-whatsapp" aria-hidden="true"></i> Book Now
           </a>
         </div>
         <div class="mobile-menu-toggle" id="mobileToggle" aria-label="Toggle menu" aria-expanded="false">
@@ -337,18 +403,24 @@
           <p>Fresh insights for a healthier smile – updated daily.</p>
         </div>
         <div class="features-grid" aria-label="Article list">
-          <article class="feature-card" aria-label="The Importance of Daily Oral Hygiene">
+          <!-- Featured post card with schema -->
+          <article class="feature-card" aria-label="The Importance of Daily Oral Hygiene" itemscope itemtype="https://schema.org/BlogPosting">
             <div class="feature-meta">
-              <div class="date"><i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;03 Aug 2025</div>
+              <div class="date" aria-label="Published date">
+                <i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;
+                <time datetime="2025-08-03" itemprop="datePublished">03 Aug 2025</time>
+              </div>
             </div>
-            <h3><a href="posts/oral-hygiene-importance.html" aria-label="Read article: The Importance of Daily Oral Hygiene">The Importance of Daily Oral Hygiene</a></h3>
-            <p>Brushing and flossing are your first defence against cavities and gum disease. Learn the science behind a sparkling smile and build a routine that lasts.</p>
+            <h3 itemprop="headline">
+              <a href="posts/oral-hygiene-importance.html" itemprop="url">The Importance of Daily Oral Hygiene</a>
+            </h3>
+            <p itemprop="description">Brushing and flossing are your first defence against cavities and gum disease. Learn the science behind a sparkling smile and build a routine that lasts.</p>
             <div class="read-more-wrapper">
-              <a href="posts/oral-hygiene-importance.html" class="btn btn-outline" aria-label="Read more about oral hygiene">Read More</a>
+              <a href="posts/oral-hygiene-importance.html" class="btn btn-outline" aria-label="Read more about oral hygiene" itemprop="mainEntityOfPage">Read More</a>
             </div>
+            <meta itemprop="author" content="Dr. Vikram Jeet Singh" />
+            <meta itemprop="publisher" content="Smiles & Braces Dental Clinic" />
           </article>
-
-          <!-- Additional articles can be cloned from above card -->
         </div>
       </div>
     </section>
@@ -360,9 +432,9 @@
         <small>© <span id="year"></span> Smiles &amp; Braces Dental Clinic · Written by Dr. Vikram Jeet Singh</small>
       </div>
       <div class="socials" aria-label="Clinic social links">
-        <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
-        <a href="mailto:info@bestindiandentist.com" aria-label="Email"><i class="far fa-envelope"></i></a>
+        <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="mailto:info@bestindiandentist.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
       </div>
       <div style="margin-top:6px;font-size:0.7rem;color:#8a9bbf;">
         <p>Trusted orthodontic care in Lucknow · Shop No.6, Javed Market, Indira Nagar, Lucknow, Uttar Pradesh 226016</p>
