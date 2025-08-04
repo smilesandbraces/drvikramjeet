@@ -390,25 +390,20 @@
   </style>
 </head>
 <body>
-  <header class="header" aria-label="Site header">
-    <div class="container">
-      <div class="nav-inner" id="navWrapper">
-        <div class="nav-brand">
-          <div class="logo" aria-label="Clinic logo with tooth">
-            <!-- refined tooth icon inside gradient circle -->
-            <svg viewBox="0 0 64 64" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" fill="none">
-              <circle cx="32" cy="32" r="30" fill="white" fill-opacity="0"/>
-              <!-- Tooth shape -->
-              <path d="M32 8c-6.627 0-12 5.373-12 12 0 3.6.48 8.4 1.44 12 1.92 7.2 4.8 12 8.16 16 .64-.96 1.44-1.92 2.08-2.88.64.96 1.44 1.92 2.08 2.88 3.36-4 6.24-8.8 8.16-16 .96-3.6 1.44-8.4 1.44-12 0-6.627-5.373-12-12-12zm12 24c0 4-4 7-8 7s-8-3-8-7v-5c0-5 4-9 8-9s8 4 8 9v5z" fill="#ffffff"/>
-              <!-- subtle glow ring -->
-              <circle cx="32" cy="32" r="30" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="none"/>
-            </svg>
-          </div>
-          <div class="brand-text">
-            <div class="title">Smiles &amp; Braces Dental Clinic</div>
-            <div class="subtitle">Dental Health Blog</div>
-          </div>
+    <header aria-label="Site header">
+    <div class="container" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;">
+      <div class="brand">
+        <div class="logo"><i class="fas fa-tooth"></i></div>
+        <div>
+          <div style="font-size:1rem;">Smiles & Braces Dental Clinic</div>
+          <div style="font-size:.75rem;color:var(--muted);">Dental Health Blog</div>
         </div>
+      </div>
+      <div class="nav-back">
+        <a href="/index.html">← Back to Home</a>
+      </div>
+    </div>
+  </header>
 
         <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
           <span class="bar"></span>
