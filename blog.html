@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dental Blog | Smiles & Braces Dental Clinic</title>
-  <meta name="description" content="Insights on oral health, hygiene, preventive dentistry, and smile care from Dr. Vikram Jeet Singh. Read the latest blog posts to keep your smile healthy." />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Dental Blog • Smiles & Braces Dental Clinic | Dr. Vikram Jeet Singh</title>
+  <meta name="description" content="Daily dental health tips, oral hygiene advice, and preventive dentistry insights from Dr. Vikram Jeet Singh in Lucknow. Keep your smile healthy with expert articles." />
   <link rel="canonical" href="https://www.drvikramjeet.com/blog.html" />
   <meta name="theme-color" content="#1f6fa5" />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
   <meta property="og:site_name" content="Smiles & Braces Dental Clinic" />
-  <meta property="og:title" content="Dental Blog | Smiles & Braces Dental Clinic" />
-  <meta property="og:description" content="Insights on oral health, hygiene, preventive dentistry, and smile care from Dr. Vikram Jeet Singh." />
+  <meta property="og:title" content="Dental Blog • Smiles & Braces Dental Clinic" />
+  <meta property="og:description" content="Daily dental health tips, oral hygiene advice, and preventive dentistry insights from Dr. Vikram Jeet Singh in Lucknow." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.drvikramjeet.com/blog.html" />
   <meta property="og:image" content="https://www.drvikramjeet.com/assets/images/blog-cover.jpg" />
@@ -20,8 +20,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dental Blog | Smiles & Braces Dental Clinic" />
-  <meta name="twitter:description" content="Insights on oral health, hygiene, preventive dentistry, and smile care from Dr. Vikram Jeet Singh." />
+  <meta name="twitter:title" content="Dental Blog • Smiles & Braces Dental Clinic" />
+  <meta name="twitter:description" content="Daily dental health tips, oral hygiene advice, and preventive dentistry insights from Dr. Vikram Jeet Singh in Lucknow." />
   <meta name="twitter:image" content="https://www.drvikramjeet.com/assets/images/blog-cover.jpg" />
 
   <!-- Structured Data -->
@@ -50,29 +50,39 @@
           {"@type":"ListItem","position":1,"name":"Home","item":"https://www.drvikramjeet.com/"},
           {"@type":"ListItem","position":2,"name":"Blog","item":"https://www.drvikramjeet.com/blog.html"}
         ]
+      },
+      {
+        "@type":"WebPage",
+        "name":"Dental Blog",
+        "url":"https://www.drvikramjeet.com/blog.html",
+        "description":"Daily dental health tips, oral hygiene advice, and preventive dentistry insights from Dr. Vikram Jeet Singh in Lucknow.",
+        "breadcrumb":{
+          "@id":"https://www.drvikramjeet.com/blog.html#breadcrumb"
+        }
       }
     ]
   }
   </script>
 
   <!-- Fonts & Icons -->
-  <link rel="preconnect" href="https://fonts.googleapis.com"/>
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet"/>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-pO1YFfG+Y6kVqS+P1w8uZq1EJY+TZH6aE8FZ5xI7+tkFh9fQ3EeEe5OVn0JfVtT0Osxg6EwWmG0fKQX0bqW5g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" integrity="sha512-pO1YFfG+Y6kVqS+P1w8uZq1EJY+TZH6aE8FZ5xI7+tkFh9fQ3EeEe5OVn0JfVtT0Osxg6EwWmG0fKQX0bqW5g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <style>
     :root {
-      --radius: 14px;
-      --shadow: 0 28px 70px -10px rgba(31,111,165,0.12);
-      --gradient: linear-gradient(135deg,#20b2aa,#1f6fa5);
-      --transition: .3s cubic-bezier(.4,.2,.2,1);
-      --ff-primary: 'Inter', system-ui,-apple-system,sans-serif;
-      --ff-secondary: 'Poppins', system-ui,-apple-system,sans-serif;
+      --radius:14px;
+      --shadow:0 28px 70px -10px rgba(31,111,165,0.12);
+      --gradient:linear-gradient(135deg,#20b2aa,#1f6fa5);
+      --transition:.3s cubic-bezier(.4,.2,.2,1);
+      --ff-primary:'Inter', system-ui,-apple-system,sans-serif;
+      --ff-secondary:'Poppins', system-ui,-apple-system,sans-serif;
       --bg:#f3f8fc;
-      --card:#ffffff;
+      --card:#fff;
       --text:#1f2d45;
       --muted:#6b7a99;
+      --radius-small:8px;
     }
     *{box-sizing:border-box;}
     body {
@@ -85,27 +95,29 @@
     }
     a {color: inherit; text-decoration:none; transition: var(--transition);}
     a:hover {text-decoration:underline;}
+
     .container {
-      width: min(1120px, 94%);
-      margin: 0 auto;
+      width: min(1120px,94%);
+      margin:0 auto;
       padding:0;
     }
+
     /* HEADER */
     .header {
-      position: sticky;
+      position:sticky;
       top:0;
-      z-index: 100;
+      z-index:100;
       background:#fff;
       border-bottom:1px solid rgba(0,0,0,0.05);
       padding:0.65rem 0;
-      box-shadow: 0 10px 30px -10px rgba(31,111,165,0.05);
+      box-shadow:0 10px 30px -10px rgba(31,111,165,0.05);
     }
     .nav-inner {
       display:flex;
       align-items:center;
       justify-content: space-between;
       gap:1rem;
-      flex-wrap: wrap;
+      flex-wrap:wrap;
     }
     .nav-brand {
       display:flex;
@@ -122,6 +134,12 @@
       justify-content:center;
       position: relative;
       box-shadow:0 18px 55px -5px rgba(32,178,170,0.35);
+      flex-shrink:0;
+    }
+    .logo svg {
+      width:24px;
+      height:28px;
+      display:block;
     }
     .logo::after {
       content:"";
@@ -135,23 +153,26 @@
       display:flex;
       flex-direction:column;
       line-height:1.1;
+      min-width:0;
     }
     .brand-text .title {
       margin:0;
       font-size:1rem;
       font-weight:700;
+      white-space:nowrap;
     }
     .brand-text .subtitle {
       margin:0;
-      font-size:.75rem;
+      font-size:.7rem;
       color: var(--muted);
       margin-top:2px;
     }
+
     .nav-links {
       display:flex;
       align-items:center;
       gap:1rem;
-      flex-wrap: wrap;
+      flex-wrap:wrap;
     }
     .nav-link {
       font-size:0.9rem;
@@ -160,7 +181,6 @@
       font-weight:500;
       color:#2f3f60;
       position: relative;
-      transition: var(--transition);
     }
     .nav-link.active,
     .nav-link:hover {
@@ -183,13 +203,46 @@
     .btn-primary {
       background: var(--gradient);
       color:#fff;
-      box-shadow: 0 16px 50px -10px rgba(32,178,170,0.4);
+      box-shadow:0 16px 50px -10px rgba(32,178,170,0.4);
     }
     .btn-primary:hover {
       filter:brightness(1.07);
       transform: translateY(-1px);
     }
-    /* SECTION */
+
+    /* Mobile hamburger */
+    .hamburger {
+      display:none;
+      background:none;
+      border:none;
+      cursor:pointer;
+      padding:8px;
+      position:relative;
+      z-index:120;
+    }
+    .hamburger .bar {
+      display:block;
+      width:24px;
+      height:3px;
+      background:#1f2d45;
+      border-radius:2px;
+      position:relative;
+      transition: all .3s ease;
+    }
+    .hamburger .bar + .bar {
+      margin-top:5px;
+    }
+    .nav-open .hamburger .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+    .nav-open .hamburger .bar:nth-child(2) {
+      opacity:0;
+    }
+    .nav-open .hamburger .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    /* SECTION HEADER */
     .section-header {
       text-align:center;
       max-width:760px;
@@ -208,7 +261,7 @@
       text-transform:uppercase;
       margin-bottom:6px;
     }
-    .section-header h2 {
+    .section-header h1 {
       margin:4px 0 6px;
       font-family: var(--ff-secondary);
       font-size:2.4rem;
@@ -220,9 +273,10 @@
       font-size:1rem;
       color:#556d95;
     }
+
     /* GRID */
     .features-grid {
-      display: grid;
+      display:grid;
       grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
       gap:1.75rem;
       margin:1rem 0 3rem;
@@ -241,7 +295,7 @@
     }
     .feature-card:hover {
       transform: translateY(-3px);
-      box-shadow: 0 35px 80px -15px rgba(31,111,165,0.2);
+      box-shadow:0 35px 80px -15px rgba(31,111,165,0.2);
     }
     .feature-meta {
       font-size:0.75rem;
@@ -250,7 +304,7 @@
       align-items:center;
       gap:10px;
     }
-    .feature-card h3 {
+    .feature-card h2, .feature-card h3 {
       margin:0;
       font-size:1.35rem;
       line-height:1.2;
@@ -268,16 +322,18 @@
       margin-top:auto;
     }
     .btn-outline {
-      background: transparent;
+      background:transparent;
       border:2px solid #1f6fa5;
-      color: #1f6fa5;
+      color:#1f6fa5;
       border-radius:10px;
       padding:10px 18px;
       font-weight:600;
+      display:inline-block;
     }
     .btn-outline:hover {
       background: rgba(31,111,165,0.07);
     }
+
     /* FOOTER */
     .footer {
       margin-top:3rem;
@@ -305,12 +361,14 @@
       font-size:0.65rem;
       color:#8a9bbf;
     }
+
     /* RESPONSIVE */
-    @media (max-width: 1080px){
+    @media (max-width:1080px){
       .nav-links {display:none;}
+      .hamburger {display:inline-flex;}
     }
-    @media (max-width: 840px){
-      .section-header h2 {font-size:2rem;}
+    @media (max-width:840px){
+      .section-header h1 {font-size:2rem;}
     }
     .nav-open .nav-links {
       position:absolute;
@@ -334,12 +392,16 @@
 <body>
   <header class="header" aria-label="Site header">
     <div class="container">
-      <div class="nav-inner">
+      <div class="nav-inner" id="navWrapper">
         <div class="nav-brand">
-          <div class="logo" aria-label="Tooth logo">
-            <!-- solid white tooth -->
-            <svg width="20" height="24" viewBox="0 0 24 28" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="#fff">
-              <path d="M12 0c-2.76 0-5 2.24-5 5 0 1.5.2 3.5.6 5 .8 3 2 5 3.4 7 .5-.7 1.1-1.4 1.6-2.2.5.8 1.1 1.5 1.6 2.2 1.4-2 2.6-4 3.4-7 .4-1.5.6-3.5.6-5 0-2.76-2.24-5-5-5zm5 18c0 3-3 5-5 5s-5-2-5-5v-4c0-4 3-7 7-7s7 3 7 7v4z"/>
+          <div class="logo" aria-label="Clinic logo with tooth">
+            <!-- refined tooth icon inside gradient circle -->
+            <svg viewBox="0 0 64 64" aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" fill="none">
+              <circle cx="32" cy="32" r="30" fill="white" fill-opacity="0"/>
+              <!-- Tooth shape -->
+              <path d="M32 8c-6.627 0-12 5.373-12 12 0 3.6.48 8.4 1.44 12 1.92 7.2 4.8 12 8.16 16 .64-.96 1.44-1.92 2.08-2.88.64.96 1.44 1.92 2.08 2.88 3.36-4 6.24-8.8 8.16-16 .96-3.6 1.44-8.4 1.44-12 0-6.627-5.373-12-12-12zm12 24c0 4-4 7-8 7s-8-3-8-7v-5c0-5 4-9 8-9s8 4 8 9v5z" fill="#ffffff"/>
+              <!-- subtle glow ring -->
+              <circle cx="32" cy="32" r="30" stroke="rgba(255,255,255,0.2)" stroke-width="4" fill="none"/>
             </svg>
           </div>
           <div class="brand-text">
@@ -347,25 +409,32 @@
             <div class="subtitle">Dental Health Blog</div>
           </div>
         </div>
-        <div class="nav-links" id="navLinks">
+
+        <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false" id="menuToggle">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
           <a href="index.html#home" class="nav-link">Home</a>
           <a href="index.html#about" class="nav-link">About Dr. Vikram</a>
           <a href="index.html#services" class="nav-link">Services</a>
           <a href="index.html#contact" class="nav-link">Contact</a>
-          <a href="blog.html" class="nav-link active">Blog</a>
-          <a href="https://wa.me/917570000801?text=Hi%20Dr.%20Vikram" target="_blank" class="btn btn-primary" aria-label="Book on WhatsApp">
+          <a href="blog.html" class="nav-link active" aria-current="page">Blog</a>
+          <a href="https://wa.me/917570000801?text=Hi%20Dr.%20Vikram" target="_blank" class="btn btn-primary" aria-label="Book appointment on WhatsApp" rel="noopener">
             <i class="fab fa-whatsapp" aria-hidden="true"></i> Book Now
           </a>
-        </div>
+        </nav>
       </div>
     </div>
   </header>
 
-  <main aria-label="Blog listing" style="padding:0;">
+  <main aria-label="Blog listing">
     <div class="section-header">
       <div class="section-tag">Dental Blog</div>
-      <h2>Latest Articles</h2>
-      <p>Fresh insights for a healthier smile – updated daily.</p>
+      <h1>Latest Articles</h1>
+      <p>Fresh insights for a healthier smile – updated regularly.</p>
     </div>
 
     <div class="container">
@@ -375,27 +444,26 @@
           <div class="feature-meta">
             <div><i class="fas fa-calendar-alt" aria-hidden="true"></i>&nbsp;<time datetime="2025-08-03" itemprop="datePublished">03 Aug 2025</time></div>
           </div>
-          <h3 itemprop="headline">
+          <h2 itemprop="headline">
             <a href="posts/oral-hygiene-importance.html" itemprop="url">The Importance of Daily Oral Hygiene</a>
-          </h3>
+          </h2>
           <p itemprop="description">Brushing and flossing are your first defence against cavities and gum disease. Learn the science behind a sparkling smile and build a routine that lasts.</p>
           <div class="read-more-wrapper">
-            <a href="posts/oral-hygiene-importance.html" class="btn-outline" aria-label="Read more" itemprop="mainEntityOfPage">Read More</a>
+            <a href="posts/oral-hygiene-importance.html" class="btn-outline" aria-label="Read more about oral hygiene" itemprop="mainEntityOfPage">Read More</a>
           </div>
           <meta itemprop="author" content="Dr. Vikram Jeet Singh">
           <meta itemprop="publisher" content="Smiles & Braces Dental Clinic">
         </article>
-        <!-- /post block -->
       </div>
     </div>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" aria-label="Site footer">
     <div class="container">
       <div style="margin-bottom:6px;">© <span id="year"></span> Smiles &amp; Braces Dental Clinic · Written by Dr. Vikram Jeet Singh</div>
       <div class="socials" aria-label="Clinic social links">
-        <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
+        <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" aria-label="Instagram" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+        <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp" rel="noopener"><i class="fab fa-whatsapp" aria-hidden="true"></i></a>
         <a href="mailto:info@bestindiandentist.com" aria-label="Email"><i class="far fa-envelope" aria-hidden="true"></i></a>
       </div>
       <div class="subtext">
@@ -405,7 +473,25 @@
   </footer>
 
   <script>
+    // Year update
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile nav toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const navWrapper = document.getElementById('navWrapper');
+    menuToggle.addEventListener('click', () => {
+      const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+      menuToggle.setAttribute('aria-expanded', String(!expanded));
+      navWrapper.classList.toggle('nav-open');
+    });
+
+    // Close mobile nav when clicking outside (optional)
+    document.addEventListener('click', (e) => {
+      if (!navWrapper.contains(e.target) && navWrapper.classList.contains('nav-open')) {
+        navWrapper.classList.remove('nav-open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
   </script>
 </body>
 </html>
