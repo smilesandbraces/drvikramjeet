@@ -473,3 +473,23 @@ table{width:100%;overflow-x:auto;display:block;white-space:nowrap;}
 input,textarea,select{width:100%;max-width:100%;box-sizing:border-box;}
 /* Touch targets */
 .btn,.nav-link,.contact-btn,.many-more-button,.mobile-menu-toggle{min-height:44px;min-width:44px;}
+/* Brand links in the fixed header */
+.header .brand-link:link,
+.header .brand-link:visited {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Small doctor line under the brand */
+.header .brand-sub:link,
+.header .brand-sub:visited {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Optional: keep hover feedback */
+.header .brand-link:hover,
+.header .brand-sub:hover {
+  text-decoration: none;
+  color: var(--primary-dark);
+}
