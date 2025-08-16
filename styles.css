@@ -2061,6 +2061,51 @@ select {
   position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;
   overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0
 }
+/* ---- Link reset utilities ---- */
+.unstyled-link { color: inherit; text-decoration: none; }
+.unstyled-link:hover { text-decoration: none; }
+
+/* Phone / email links in cards & footer */
+.contact-details a,
+.footer .contact-item a {
+  color: var(--white);             /* footer */
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-details a:hover,
+.footer .contact-item a:hover { color: var(--primary-light); }
+
+/* Header brand link */
+.header .brand-link { color: inherit; text-decoration: none; }
+
+/* Icon-only links: hide helper text visually */
+.sr-only {
+  position:absolute; width:1px; height:1px; padding:0; margin:-1px;
+  overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0;
+}
+
+/* Card/section titles now that we de-heading them */
+.card-title,
+.q-title,
+.author-name,
+.brand-title {
+  font-family: var(--font-secondary);
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+.card-title { font-size: var(--fs-xl); margin-bottom: var(--space-md); }
+.q-title    { font-size: var(--fs-lg); margin-bottom: var(--space-xs); }
+.author-name{ font-size: var(--fs-lg); }
+.brand-title{ font-size: clamp(0.875rem, 0.8rem + 0.375vw, 1.125rem); line-height:1.2; }
+
+/* Make ALL plain anchors inherit color unless specifically styled elsewhere */
+main a:not(.btn):not(.contact-btn):not(.nav-link):not(.many-more-button) {
+  color: inherit;
+  text-decoration: none;
+}
+main a:not(.btn):not(.contact-btn):not(.nav-link):not(.many-more-button):hover {
+  text-decoration: underline;
+}
 
 
 
