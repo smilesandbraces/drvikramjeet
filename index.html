@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-
   <title>Dr. Vikram Jeet Singh | Orthodontist in Lucknow – Smiles & Braces</title>
+
   <meta name="title" content="Dr. Vikram Jeet Singh | Orthodontist in Lucknow" />
   <meta name="description" content="Dr. Vikram Jeet Singh – Orthodontist in Lucknow with 15+ years experience. Smiles & Braces Dental Clinic offers braces, aligners & general dental care." />
   <meta name="keywords" content="orthodontist, dental clinic, braces, clear aligners, Lucknow, Dr. Vikram Jeet Singh, dental care, teeth straightening, dental treatment, orthodontic treatment, ceramic braces, metal braces, retainers, dental checkup, root canal, tooth extraction, dental implants, cosmetic dentistry, preventive care" />
@@ -105,48 +105,68 @@
       window.location.replace("https://www.drvikramjeet.com");
     }
   </script>
-  
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZKXHVZ0F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-2QZKXHVZ0F');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2QZKXHVZ0F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2QZKXHVZ0F');
+  </script>
 </head>
 <body>
 
-<header class="header">
-  <div class="container header__container">
-    <!-- brand ... -->
-
-    <nav class="nav" id="siteNav" aria-label="Primary"> ... </nav>
-
-    <!-- Hamburger -->
-    <button class="mobile-menu-toggle" id="mobileMenuToggle"
-            aria-label="Open menu" aria-controls="mobileSheet" aria-expanded="false">
-      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
-    </button>
-  </div>
-
-  <!-- Mobile Sheet -->
-  <div class="mobile-sheet" id="mobileSheet" hidden>
-    <nav class="mobile-nav" aria-label="Mobile">
-      <a class="mobile-link" href="#home">Home</a>
-      <a class="mobile-link" href="#about">About Dr. Vikram</a>
-      <a class="mobile-link" href="#services">Services</a>
-      <a class="mobile-link" href="blog.html">Blog</a>
-      <a class="mobile-link" href="#contact">Contact</a>
-      <a class="btn btn-primary btn-large mobile-cta"
-         href="https://wa.me/917570000801" target="_blank">
-        <i class="fab fa-whatsapp" aria-hidden="true"></i> Book Appointment
+  <!-- ======================== HEADER (fixed) ======================== -->
+  <header class="header" role="banner">
+    <div class="container header__container">
+      <a class="nav-brand" href="#home" aria-label="Smiles & Braces Dental Clinic">
+        <div class="logo">
+          <div class="logo-icon"><i class="fas fa-tooth" aria-hidden="true"></i></div>
+        </div>
+        <div class="brand-text">
+          <h3>Smiles & Braces Dental Clinic</h3>
+          <p>Dr. Vikram Jeet Singh</p>
+        </div>
       </a>
-    </nav>
-  </div>
-</header>
-  <!-- Hero -->
+
+      <!-- Desktop Primary Nav -->
+      <nav class="nav" id="siteNav" aria-label="Primary">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Dr. Vikram</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="https://wa.me/917570000801?text=Hello%20Dr.%20Vikram%20Jeet%20Singh,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic."
+           target="_blank" class="btn btn-primary btn-small">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i> Book Now
+        </a>
+      </nav>
+
+      <!-- Mobile Toggle -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle"
+              aria-label="Open menu" aria-controls="mobileSheet" aria-expanded="false">
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Sheet Menu -->
+    <div class="mobile-sheet" id="mobileSheet" hidden>
+      <nav class="mobile-nav" aria-label="Mobile">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About Dr. Vikram</a>
+        <a href="#services" class="mobile-link">Services</a>
+        <a href="blog.html" class="mobile-link">Blog</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+        <a href="https://wa.me/917570000801?text=Hello%20Dr.%20Vikram%20Jeet%20Singh,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic."
+           target="_blank" class="btn btn-primary btn-large mobile-cta">
+          <i class="fab fa-whatsapp" aria-hidden="true"></i> Book Appointment
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ======================== HERO ======================== -->
   <main id="home" class="hero" role="main" aria-label="Hero">
     <div class="hero-background">
       <div class="floating-shapes">
@@ -164,7 +184,6 @@
             <span>15+ Years Experience</span>
           </div>
 
-          <!-- Single H1 on page -->
           <h1><span class="gradient-text">Your Trusted Orthodontist in Lucknow - </span> Braces, Aligners &amp; Dental Care</h1>
 
           <p class="hero-description">
@@ -187,7 +206,12 @@
               <div class="stat-icon"><i class="fas fa-users" aria-hidden="true"></i></div>
               <div class="stat-content">
                 <div class="stat-number">9563+</div>
-                <div class="stat-label">Happy Patients</div>
+                <div class="stat-label">
+                  <span class="stars" aria-hidden="true">
+                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                  </span>
+                  Happy Patients
+                </div>
               </div>
             </div>
             <div class="stat">
@@ -201,18 +225,13 @@
               <div class="stat-icon"><i class="fas fa-star" aria-hidden="true"></i></div>
               <div class="stat-content">
                 <div class="stat-number">5</div>
-                <div class="stat-label">
-                  <span class="stars" aria-hidden="true">
-                    <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
-                  </span>
-                  Star Rating
-                </div>
+                <div class="stat-label">Star Rating</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Doctor card (no extra headings) -->
+        <!-- Doctor card -->
         <div class="hero-visual">
           <div class="hero-card" aria-label="Dr. Vikram Jeet Singh profile">
             <div class="card-glow" aria-hidden="true"></div>
@@ -241,11 +260,12 @@
             </div>
           </div>
         </div>
+
       </div><!-- /.hero-content -->
     </div>
   </main>
 
-  <!-- Features -->
+  <!-- ======================== FEATURES ======================== -->
   <section class="features" aria-labelledby="why-us">
     <div class="container">
       <div class="section-header">
@@ -294,7 +314,7 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ======================== ABOUT ======================== -->
   <section id="about" class="about" aria-labelledby="about-title">
     <div class="container">
       <div class="about-content">
@@ -356,7 +376,7 @@
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- ======================== SERVICES ======================== -->
   <section id="services" class="services" aria-labelledby="services-title">
     <div class="container">
       <div class="section-header">
@@ -369,7 +389,7 @@
       <div class="services-category">
         <h3><i class="fas fa-teeth" aria-hidden="true"></i> Orthodontic Treatments</h3>
         <div class="services-grid">
-          <!-- Service card pattern -->
+          <!-- Service cards (unchanged content) -->
           <article class="service-card">
             <div class="service-icon"><i class="fas fa-grip-lines" aria-hidden="true"></i><div class="icon-bg" aria-hidden="true"></div></div>
             <div class="service-content">
@@ -608,7 +628,7 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
+  <!-- ======================== TESTIMONIALS ======================== -->
   <section class="testimonials" aria-labelledby="testimonials-title">
     <div class="container">
       <div class="section-header">
@@ -700,7 +720,7 @@
     </div>
   </section>
 
-  <!-- Videos -->
+  <!-- ======================== VIDEOS ======================== -->
   <section id="videos" class="video-section" aria-labelledby="videos-title">
     <div class="container">
       <div class="section-header">
@@ -724,248 +744,190 @@
     </div>
   </section>
 
-     <!-- Contact Section - World Class Design -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-tag">Contact Us</div>
-                <h2>Get In Touch</h2>
-                <p>Ready to transform your smile? Contact Dr. Vikram Jeet Singh and our team to schedule your consultation.</p>
-            </div>
-            <div class="contact-grid">
-                <!-- Visit Our Clinic -->
-                <div class="contact-card">
-                    <div class="card-glow"></div>
-                    <div class="contact-icon">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div class="icon-pulse"></div>
-                    </div>
-                    <h3>Visit Our Clinic</h3>
-                    <div class="contact-details">
-                        <p>Shop No.6, Javed Market</p>
-                        <p>Near Aurobindo Park, Munshi Pulia</p>
-                        <p>Indira Nagar, Lucknow, UP 226016</p>
-                    </div>
-                    <a href="https://g.co/kgs/VpiwSUP" target="_blank" class="contact-btn">
-                        <i class="fas fa-directions"></i>
-                        Get Directions
-                    </a>
-                </div>
-
-                <!-- Call Us -->
-                <div class="contact-card">
-                    <div class="card-glow"></div>
-                    <div class="contact-icon">
-                        <i class="fas fa-phone"></i>
-                        <div class="icon-pulse"></div>
-                    </div>
-                    <h3>Call Us</h3>
-                    <div class="contact-details">
-                        <p>+91 7570000801</p>
-                        <p>+91 9565321625</p>
-                    </div>
-                    <a href="tel:+917570000801" class="contact-btn">
-                        <i class="fas fa-phone-alt"></i>
-                        Call Now
-                    </a>
-                </div>
-
-                <!-- Email Us -->
-                <div class="contact-card email-card">
-                    <div class="card-glow"></div>
-                    <div class="contact-icon">
-                        <i class="fas fa-envelope"></i>
-                        <div class="icon-pulse"></div>
-                    </div>
-                    <h3>Email Us</h3>
-                    <div class="contact-details">
-                        <div class="email-box">
-                            <p>smilesandbracesmunshipuliya@gmail.com</p>
-                        </div>
-                    </div>
-                    <a href="mailto:smilesandbracesmunshipuliya@gmail.com?subject=Appointment%20Request&body=Hello%20Dr.%20Vikram%20Jeet%20Singh,%0A%0AI%20would%20like%20to%20schedule%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic.%0A%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0A%0AThank%20you." class="contact-btn">
-                        <i class="fas fa-paper-plane"></i>
-                        Send Email
-                    </a>
-                </div>
-
-                <!-- Clinic Hours -->
-                <div class="contact-card">
-                    <div class="card-glow"></div>
-                    <div class="contact-icon">
-                        <i class="fas fa-clock"></i>
-                        <div class="icon-pulse"></div>
-                    </div>
-                    <h3>Clinic Hours</h3>
-                    <div class="contact-details">
-                        <p><strong>Morning:</strong> 9:30 AM - 2:00 PM</p>
-                        <p><strong>Evening:</strong> 5:30 PM - 9:00 PM</p>
-                        <p><strong>Days:</strong> Monday to Sunday</p>
-                        <p><strong>Closed:</strong> Saturday</p>
-                    </div>
-                    <a href="https://wa.me/917570000801?text=Hello%20Dr.%20Vikram%20Jeet%20Singh,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic.%20Please%20let%20me%20know%20your%20available%20time%20slots." target="_blank" class="contact-btn">
-                        <i class="fab fa-whatsapp"></i>
-                        Book Appointment
-                    </a>
-                </div>
-            <!-- Instagram -->
-<div class="contact-card">
-    <div class="card-glow"></div>
-    <div class="contact-icon">
-        <i class="fab fa-instagram"></i>
-        <div class="icon-pulse"></div>
-    </div>
-    <h3>Instagram</h3>
-    <div class="contact-details">
-        <p>@drvikramjeetdental</p>
-    </div>
-    <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" class="contact-btn">
-        <i class="fab fa-instagram"></i>
-        Follow Us
-    </a>
-</div>
-
-<!-- Facebook -->
-<div class="contact-card">
-    <div class="card-glow"></div>
-    <div class="contact-icon">
-        <i class="fab fa-facebook-f"></i>
-        <div class="icon-pulse"></div>
-    </div>
-    <h3>Facebook</h3>
-    <div class="contact-details">
-        <p>Smiles & Braces</p>
-    </div>
-    <a href="https://www.facebook.com/share/1H4eFwZU9J/" target="_blank" class="contact-btn">
-        <i class="fab fa-facebook-f"></i>
-        Like Page
-    </a>
-</div>
-            </div>
-    </section>
-
-
- <!-- CTA Section -->
-    <section class="cta">
-        <div class="cta-background">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-                <div class="shape shape-5"></div>
-                <div class="shape shape-6"></div>
-                <div class="shape shape-7"></div>
-                <div class="shape shape-8"></div>
-                <div class="shape shape-9"></div>
-                <div class="shape shape-10"></div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Start Your Dental Journey?</h2>
-                <p>Don't wait any longer to achieve the smile you've always wanted. Contact Dr. Vikram Jeet Singh today to schedule your consultation and take the first step towards a healthier, more beautiful smile.</p>
-                <div class="cta-buttons">
-                    <a href="https://wa.me/917570000801?text=Hello%20Dr.%20Vikram%20Jeet%20Singh,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic.%20Please%20let%20me%20know%20your%20available%20time%20slots." target="_blank" class="btn btn-primary btn-large">
-                        <i class="fab fa-whatsapp"></i>
-                        Book Your Appointment Now
-                    </a>
-                    <a href="tel:+917570000801" class="btn btn-secondary btn-large">
-                        <i class="fas fa-phone"></i>
-                        Call Now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-  <!-- Footer -->
-<footer class="footer">
+  <!-- ======================== CONTACT ======================== -->
+  <section id="contact" class="contact" aria-labelledby="contact-title">
     <div class="container">
-        <div class="footer-brand">
-            <div class="logo">
-                <div class="logo-icon">
-                    <i class="fas fa-tooth"></i>
-                </div>
-            </div>
-            <div class="brand-text">
-                <h3>Smiles & Braces Dental Clinic</h3>
-                <p>Dr. Vikram Jeet Singh</p>
-            </div>
+      <div class="section-header">
+        <div class="section-tag">Contact Us</div>
+        <h2 id="contact-title">Get In Touch</h2>
+        <p>Ready to transform your smile? Contact Dr. Vikram Jeet Singh and our team to schedule your consultation.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Visit Our Clinic -->
+        <div class="contact-card">
+          <div class="card-glow"></div>
+          <div class="contact-icon"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><div class="icon-pulse"></div></div>
+          <h3>Visit Our Clinic</h3>
+          <div class="contact-details">
+            <p>Shop No.6, Javed Market</p>
+            <p>Near Aurobindo Park, Munshi Pulia</p>
+            <p>Indira Nagar, Lucknow, UP 226016</p>
+          </div>
+          <a href="https://g.co/kgs/VpiwSUP" target="_blank" class="contact-btn">
+            <i class="fas fa-directions"></i> Get Directions
+          </a>
         </div>
+
+        <!-- Call Us -->
+        <div class="contact-card">
+          <div class="card-glow"></div>
+          <div class="contact-icon"><i class="fas fa-phone" aria-hidden="true"></i><div class="icon-pulse"></div></div>
+          <h3>Call Us</h3>
+          <div class="contact-details">
+            <p>+91 7570000801</p>
+            <p>+91 9565321625</p>
+          </div>
+          <a href="tel:+917570000801" class="contact-btn">
+            <i class="fas fa-phone-alt"></i> Call Now
+          </a>
+        </div>
+
+        <!-- Email Us -->
+        <div class="contact-card email-card">
+          <div class="card-glow"></div>
+          <div class="contact-icon"><i class="fas fa-envelope" aria-hidden="true"></i><div class="icon-pulse"></div></div>
+          <h3>Email Us</h3>
+          <div class="contact-details"><div class="email-box"><p>smilesandbracesmunshipuliya@gmail.com</p></div></div>
+          <a href="mailto:smilesandbracesmunshipuliya@gmail.com?subject=Appointment%20Request&body=Hello%20Dr.%20Vikram%20Jeet%20Singh,%0A%0AI%20would%20like%20to%20schedule%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic.%0A%0APlease%20contact%20me%20at%20your%20earliest%20convenience.%0A%0AThank%20you." class="contact-btn">
+            <i class="fas fa-paper-plane"></i> Send Email
+          </a>
+        </div>
+
+        <!-- Clinic Hours -->
+        <div class="contact-card">
+          <div class="card-glow"></div>
+          <div class="contact-icon"><i class="fas fa-clock" aria-hidden="true"></i><div class="icon-pulse"></div></div>
+          <h3>Clinic Hours</h3>
+          <div class="contact-details">
+            <p><strong>Morning:</strong> 9:30 AM - 2:00 PM</p>
+            <p><strong>Evening:</strong> 5:30 PM - 9:00 PM</p>
+            <p><strong>Days:</strong> Monday to Sunday</p>
+            <p><strong>Closed:</strong> Saturday</p>
+          </div>
+          <a href="https://wa.me/917570000801?text=Hello%20Dr.%20Vikram%20Jeet%20Singh,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic.%20Please%20let%20me%20know%20your%20available%20time%20slots." target="_blank" class="contact-btn">
+            <i class="fab fa-whatsapp"></i> Book Appointment
+          </a>
+        </div>
+
+        <!-- Instagram -->
+        <div class="contact-card">
+          <div class="card-glow"></div>
+          <div class="contact-icon"><i class="fab fa-instagram" aria-hidden="true"></i><div class="icon-pulse"></div></div>
+          <h3>Instagram</h3>
+          <div class="contact-details"><p>@drvikramjeetdental</p></div>
+          <a href="https://www.instagram.com/drvikramjeetdental" target="_blank" class="contact-btn">
+            <i class="fab fa-instagram"></i> Follow Us
+          </a>
+        </div>
+
+        <!-- Facebook -->
+        <div class="contact-card">
+          <div class="card-glow"></div>
+          <div class="contact-icon"><i class="fab fa-facebook-f" aria-hidden="true"></i><div class="icon-pulse"></div></div>
+          <h3>Facebook</h3>
+          <div class="contact-details"><p>Smiles &amp; Braces</p></div>
+          <a href="https://www.facebook.com/share/1H4eFwZU9J/" target="_blank" class="contact-btn">
+            <i class="fab fa-facebook-f"></i> Like Page
+          </a>
+        </div>
+      </div>
     </div>
+  </section>
 
-
-                    <p>Qualified orthodontist providing comprehensive dental care in Lucknow with 15+ years of experience and modern technology.</p>
-                    <div class="social-links">
-                        <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="tel:+917570000801" aria-label="Phone">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                        <a href="mailto:smilesandbracesmunshipuliya@gmail.com" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About Dr. Singh</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Traditional Braces</a></li>
-                        <li><a href="#services">Clear Aligners</a></li>
-                        <li><a href="#services">Ceramic Braces</a></li>
-                        <li><a href="#services">Dental Checkups</a></li>
-                        <li><a href="#services">Root Canal Treatment</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 7570000801</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <span>+91 9565321625</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>smilesandbracesmunshipuliya@gmail.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Shop No.6, Javed Market, Indira Nagar, Lucknow</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <span>Morning: 9:30 AM - 2:00 PM | Evening: 5:30 PM - 9:00 PM</span>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-    <p title="shashankupreti@outlook.in">
-        &copy; 2025 Smiles & Braces Dental Clinic. All rights reserved. |
-        Designed by 
-        <a href="https://wa.me/919369999261" target="_blank" class="whatsapp-link">
-            <i class="fab fa-whatsapp"></i> Shashank Upreti
-        </a>
-    </p>
-</div>
-
+  <!-- ======================== CTA ======================== -->
+  <section class="cta">
+    <div class="cta-background">
+      <div class="floating-shapes">
+        <div class="shape shape-1"></div><div class="shape shape-2"></div><div class="shape shape-3"></div>
+        <div class="shape shape-4"></div><div class="shape shape-5"></div>
+        <div class="shape shape-6"></div><div class="shape shape-7"></div>
+        <div class="shape shape-8"></div><div class="shape shape-9"></div><div class="shape shape-10"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="cta-content">
+        <h2>Ready to Start Your Dental Journey?</h2>
+        <p>Don't wait any longer to achieve the smile you've always wanted. Contact Dr. Vikram Jeet Singh today to schedule your consultation and take the first step towards a healthier, more beautiful smile.</p>
+        <div class="cta-buttons">
+          <a href="https://wa.me/917570000801?text=Hello%20Dr.%20Vikram%20Jeet%20Singh,%20I%20would%20like%20to%20book%20an%20appointment%20at%20Smiles%20%26%20Braces%20Dental%20Clinic.%20Please%20let%20me%20know%20your%20available%20time%20slots." target="_blank" class="btn btn-primary btn-large">
+            <i class="fab fa-whatsapp"></i> Book Your Appointment Now
+          </a>
+          <a href="tel:+917570000801" class="btn btn-secondary btn-large">
+            <i class="fas fa-phone"></i> Call Now
+          </a>
         </div>
-    </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="script.js"></script>
-   
+  <!-- ======================== FOOTER (fixed structure) ======================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-icon"><i class="fas fa-tooth" aria-hidden="true"></i></div></div>
+        <div class="brand-text">
+          <h3>Smiles &amp; Braces Dental Clinic</h3>
+          <p>Dr. Vikram Jeet Singh</p>
+        </div>
+      </div>
+
+      <p>Qualified orthodontist providing comprehensive dental care in Lucknow with 15+ years of experience and modern technology.</p>
+
+      <div class="footer-grid">
+        <div class="footer-section">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Dr. Singh</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Traditional Braces</a></li>
+            <li><a href="#services">Clear Aligners</a></li>
+            <li><a href="#services">Ceramic Braces</a></li>
+            <li><a href="#services">Dental Checkups</a></li>
+            <li><a href="#services">Root Canal Treatment</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contact Info</h4>
+          <div class="contact-item"><i class="fas fa-phone"></i><span>+91 7570000801</span></div>
+          <div class="contact-item"><i class="fas fa-phone"></i><span>+91 9565321625</span></div>
+          <div class="contact-item"><i class="fas fa-envelope"></i><span>smilesandbracesmunshipuliya@gmail.com</span></div>
+          <div class="contact-item"><i class="fas fa-map-marker-alt"></i><span>Shop No.6, Javed Market, Indira Nagar, Lucknow</span></div>
+          <div class="contact-item"><i class="fas fa-clock"></i><span>Morning: 9:30 AM - 2:00 PM | Evening: 5:30 PM - 9:00 PM</span></div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Connect</h4>
+          <div class="social-links">
+            <a href="https://wa.me/917570000801" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <a href="tel:+917570000801" aria-label="Phone"><i class="fas fa-phone"></i></a>
+            <a href="mailto:smilesandbracesmunshipuliya@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p title="shashankupreti@outlook.in">
+          &copy; 2025 Smiles &amp; Braces Dental Clinic. All rights reserved. |
+          Designed by
+          <a href="https://wa.me/919369999261" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i> Shashank Upreti
+          </a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
