@@ -1142,6 +1142,212 @@
     </footer>
 
     <script src="script.js"></script>
+    <script>
+// ===================== DIWALI OFFER (Site-wide) =====================
+// Toggle behavior here:
+const DIWALI_CONFIG = {
+  endISO: "2025-11-15T23:59:59",      // Offer end in local time (Asia/Kolkata)
+  autoShowMode: "per_session",        // "every_load" | "per_session" | "per_day" | "disabled"
+  reopenFloater: true,                 // Show a small "🪔 Offer" button after close
+  contactHref: "/contact.html",
+  whatsappHref: "https://wa.me/919565321625"
+};
+// ===================================================================
+
+(function(){
+  const Z = 9999, SID = "diwali_popup_shown_session", DID = "diwali_popup_day";
+  const IST_OFFSET_MIN = 330; // Asia/Kolkata
+
+  // util: IST "day key" for per-day gating
+  function istDayKey(d=new Date()){
+    const t = d.getTime() + (IST_OFFSET_MIN - d.getTimezoneOffset())*60000;
+    return new Date(t).toDateString();
+  }
+
+  // gating
+  function shouldAutoShow(){
+    switch(DIWALI_CONFIG.autoShowMode){
+      case "every_load": return true;
+      case "per_session": return !sessionStorage.getItem(SID);
+      case "per_day": return localStorage.getItem(DID) !== istDayKey();
+      default: return false;
+    }
+  }
+  function markShown(){
+    switch(DIWALI_CONFIG.autoShowMode){
+      case "per_session": sessionStorage.setItem(SID,"1"); break;
+      case "per_day": localStorage.setItem(DID, istDayKey()); break;
+    }
+  }
+
+  // inject CSS once
+  function injectCSS(){
+    if (document.getElementById("diwali-offer-css")) return;
+    const css = `
+.modal{display:none;position:fixed;inset:0;z-index:${Z};
+  background:radial-gradient(1200px 600px at 50% 10%,rgba(255,215,0,.18),transparent 60%),
+             rgba(0,0,0,.65)}
+.modal-content{position:relative;margin:clamp(60px,12vh,120px) auto 0;width:min(560px,92%);
+  padding:26px 22px 28px;border-radius:18px;text-align:center;color:#1b1b1b;
+  background:linear-gradient(180deg,#fff 0%,#fff9e6 100%);box-shadow:0 22px 60px rgba(0,0,0,.35);
+  animation:popIn .35s ease;border:2px solid transparent;background-image:
+  linear-gradient(#ffffff,#fff9e6),
+  linear-gradient(45deg,#ffb703,#ff4d4d,#9b5de5,#00c2ff,#ffd166);
+  background-origin:border-box;background-clip:padding-box,border-box;will-change:transform,opacity}
+.modal-content::after{content:"";position:absolute;inset:-8px;z-index:-1;border-radius:22px;
+  filter:blur(14px);opacity:.75;background:conic-gradient(from 0deg,#ffb703,#ff4d4d,#9b5de5,#00c2ff,#ffd166,#ffb703);
+  animation:glow 4s linear infinite}
+@keyframes popIn{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+@keyframes glow{to{transform:rotate(1turn)}}
+.festive-top{display:flex;justify-content:center;align-items:center;gap:10px;margin-bottom:6px}
+.badge{font:600 12px/1.2 system-ui,-apple-system,Segoe UI,Roboto,Arial;letter-spacing:.6px;text-transform:uppercase;color:#7a3e00;
+  background:linear-gradient(90deg,#ffd166,#ffb703);padding:6px 10px;border-radius:999px;box-shadow:inset 0 1px 0 rgba(255,255,255,.6)}
+.spark{font-size:20px}
+.title{margin:6px 0 4px;font:800 clamp(20px,2.2vw + 8px,28px)/1.2 ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial;color:#8b0000;
+  text-shadow:0 1px 0 #fff6,0 8px 20px rgba(255,77,77,.25)}
+.subtitle{color:#5b4a00;margin:0 0 14px;font-weight:600}
+.offers{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:8px}
+.offers li{background:#fff;border:1px dashed #ff7b00;color:#2d2d2d;padding:10px 12px;border-radius:10px;box-shadow:0 6px 16px rgba(255,125,0,.12)}
+.countdown-wrap{margin:12px 0 8px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;justify-items:center}
+.countdown div{background:#231942;color:#fff;padding:10px 8px;border-radius:10px;min-width:70px;box-shadow:0 8px 18px rgba(35,25,66,.35)}
+.countdown span{display:block;font:800 20px/1.1 ui-sans-serif,system-ui}
+.countdown label{display:block;font-size:11px;opacity:.85;letter-spacing:.6px;text-transform:uppercase}
+.ends-note{margin:8px 0 0;font-size:12px;color:#7a3e00}
+.cta-row{display:flex;gap:10px;justify-content:center;margin-top:16px;flex-wrap:wrap}
+.btn{text-decoration:none;cursor:pointer;user-select:none;padding:12px 16px;border-radius:10px;font-weight:700;letter-spacing:.3px;
+  transition:transform .12s ease,box-shadow .12s ease,background .2s ease}
+.btn.primary{background:linear-gradient(90deg,#ff4d4d,#ff9a3c);color:#fff;box-shadow:0 10px 18px rgba(255,77,77,.35)}
+.btn.primary:hover{transform:translateY(-2px);box-shadow:0 14px 26px rgba(255,77,77,.45)}
+.btn.ghost{border:2px solid #231942;color:#231942;background:#fff}
+.btn.ghost:hover{background:#231942;color:#fff;transform:translateY(-2px)}
+.close-btn{position:absolute;top:8px;right:10px;width:34px;height:34px;border-radius:50%;border:0;background:#231942;color:#fff;
+  font:800 20px/1 "Inter",system-ui;cursor:pointer;box-shadow:0 8px 20px rgba(35,25,66,.35)}
+.close-btn:hover{transform:rotate(90deg);transition:transform .18s ease}
+#offerReopen{position:fixed;right:12px;bottom:12px;z-index:${Z-1};display:none;align-items:center;gap:8px;border:0;border-radius:999px;padding:10px 14px;
+  background:#231942;color:#fff;box-shadow:0 8px 18px rgba(35,25,66,.35);cursor:pointer}
+@media (max-width:480px){
+  .modal{backdrop-filter:none}
+  .modal-content{box-shadow:0 12px 30px rgba(0,0,0,.25)}
+  .countdown div{min-width:62px;padding:8px 6px}
+}
+@media (prefers-reduced-motion:reduce){
+  .modal-content::after{animation:none}
+  .btn.primary:hover,.btn.ghost:hover{transform:none}
+}
+`;
+    const style = document.createElement("style");
+    style.id = "diwali-offer-css";
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+
+  // inject HTML once
+  function injectHTML(){
+    if (document.getElementById("announcementModal")) return;
+    const wrapper = document.createElement("div");
+    wrapper.innerHTML = `
+<div id="announcementModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="diwali-title" aria-describedby="diwali-desc">
+  <div class="modal-content">
+    <button class="close-btn" aria-label="Close">×</button>
+    <div class="festive-top"><span class="spark">🎆</span><span class="badge">Diwali Mega Offer</span><span class="spark">🪔</span></div>
+    <h2 class="title" id="diwali-title">Light Up Your Smile This Diwali!</h2>
+    <p class="subtitle" id="diwali-desc">Limited-time festival deals for brighter, healthier teeth</p>
+    <ul class="offers">
+      <li><strong>Teeth Whitening</strong> — <u>31% OFF</u> (festival special)</li>
+      <li><strong>Free First Consultation</strong> — new patients only</li>
+      <li><strong>Braces/Aligners</strong> — ₹5,000/10000 OFF + easy EMIs</li>
+      <li><strong>Implant</strong> — 10–15% OFF + easy EMIs</li>
+    </ul>
+    <div class="countdown-wrap">
+      <div class="countdown" id="diwaliCountdown">
+        <div><span id="dDays">00</span><label>Days</label></div>
+        <div><span id="dHours">00</span><label>Hours</label></div>
+        <div><span id="dMins">00</span><label>Mins</label></div>
+        <div><span id="dSecs">00</span><label>Secs</label></div>
+      </div>
+      <p class="ends-note">Offer ends soon — book now!</p>
+    </div>
+    <div class="cta-row">
+      <a class="btn primary" id="diwaliContact" href="${DIWALI_CONFIG.contactHref}">Book Appointment</a>
+      <a class="btn ghost" id="diwaliWhatsApp" href="${DIWALI_CONFIG.whatsappHref}" target="_blank" rel="noopener">WhatsApp Us</a>
+    </div>
+  </div>
+</div>
+<button id="offerReopen" aria-label="Reopen Diwali Offer">🪔 Offer</button>
+`;
+    document.body.appendChild(wrapper);
+  }
+
+  // logic
+  let timer = null;
+  function openModal(){
+    document.body.style.overflow = "hidden";
+    document.getElementById("announcementModal").style.display = "block";
+    const btn = document.getElementById("offerReopen"); if (btn) btn.style.display = "none";
+  }
+  function closeModal(){
+    document.getElementById("announcementModal").style.display = "none";
+    document.body.style.overflow = "";
+    if (DIWALI_CONFIG.reopenFloater){
+      const btn = document.getElementById("offerReopen"); if (btn) btn.style.display = "flex";
+    }
+  }
+  function startCountdown(endStr){
+    const end = new Date(endStr).getTime();
+    const d = id => document.getElementById(id);
+    function tick(){
+      const now = Date.now();
+      let diff = Math.max(0, end - now);
+      const days = Math.floor(diff/86400000); diff%=86400000;
+      const hrs  = Math.floor(diff/3600000);  diff%=3600000;
+      const mins = Math.floor(diff/60000);    diff%=60000;
+      const secs = Math.floor(diff/1000);
+      d("dDays").textContent  = String(days).padStart(2,"0");
+      d("dHours").textContent = String(hrs).padStart(2,"0");
+      d("dMins").textContent  = String(mins).padStart(2,"0");
+      d("dSecs").textContent  = String(secs).padStart(2,"0");
+      if (end - now <= 0) clearInterval(timer);
+    }
+    tick(); return setInterval(tick, 1000);
+  }
+
+  // event wiring once DOM is ready
+  document.addEventListener("DOMContentLoaded", ()=>{
+    injectCSS(); injectHTML();
+
+    // buttons
+    document.querySelector("#announcementModal .close-btn")?.addEventListener("click", closeModal);
+    document.getElementById("offerReopen")?.addEventListener("click", openModal);
+
+    // overlay click
+    document.addEventListener("click",(e)=>{
+      const modal = document.getElementById("announcementModal");
+      if (e.target === modal) closeModal();
+    });
+    // ESC key
+    document.addEventListener("keydown",(e)=>{ if (e.key === "Escape") closeModal(); });
+
+    // URL overrides: ?offer=show / ?offer=hide
+    const p = new URLSearchParams(location.search);
+    const override = p.get("offer");
+    timer = startCountdown(DIWALI_CONFIG.endISO);
+
+    if (override === "hide") return;
+    if (override === "show"){ openModal(); return; }
+
+    // auto show
+    if (shouldAutoShow()){
+      (window.requestIdleCallback || ((cb)=>setTimeout(cb, 100)))(()=>{
+        openModal(); markShown();
+      });
+    } else if (DIWALI_CONFIG.reopenFloater){
+      const btn = document.getElementById("offerReopen"); if (btn) btn.style.display = "flex";
+    }
+  });
+})();
+</script>
+
 </body>
 </html>
 
